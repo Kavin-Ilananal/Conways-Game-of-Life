@@ -192,6 +192,9 @@ public:
 int main(){
     vector<vector<int>> board = {{0,1,1,0,1,1,1,0},{1,1,0,1,1,0,0,0},{0,0,0,0,0,1,1,1},{1,1,1,1,0,0,0,0},{0,1,0,0,1,1,1,0}};
     class Conway obj;
+    int n;
+    cout << "Enter the number of iterations:";
+    cin >> n;
     cout << "Initial board:" << endl << endl;
     for (int i=0;i<board.size();i++)
     {
@@ -201,13 +204,16 @@ int main(){
         }
         cout << endl;
     }
-    cout << "After a iteration:" << endl << endl;
-    obj.gameOfLife(board);
-    for (int i=0;i<board.size();i++)
-    {
-        for (int j=0;j<board[0].size();j++)
+    for (int i = 0;i<n;i++){
+        cout << "After " << i+1 << " iteration:" << endl << endl;
+        obj.gameOfLife(board);
+        for (int i=0;i<board.size();i++)
         {
-            cout << board[i][j] << " ";
+            for (int j=0;j<board[0].size();j++)
+            {
+                cout << board[i][j] << " ";
+            }
+            cout << endl;
         }
         cout << endl;
     }
