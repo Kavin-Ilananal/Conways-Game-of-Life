@@ -16,3 +16,29 @@ Time Complexity
 2. Space: O(m × n)
 
 where m and n are the dimensions of the board.
+
+# Instructions to run the code:
+
+The initial Game of Life board is hardcoded inside main.cpp.
+Example:
+vector<vector<int>> board = {
+    {0,1,0},
+    {0,0,1},
+    {1,1,1},
+    {0,0,0}
+};
+
+1. 1 represents a live cell
+2. 0 represents a dead cell
+
+You can modify this matrix to test different starting patterns and behaviors.
+And just run it in any c++ compiler.
+# Iterations
+The program also allows the user to enter the number of iterations (generations) to simulate.
+
+For each iteration:
+
+1. The next generation of the board is computed
+2. The updated board is displayed as output
+
+This makes it possible to observe how patterns evolve over time.
