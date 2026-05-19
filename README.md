@@ -1,5 +1,5 @@
 # Conways-Game-of-Life
-A C++ code depicting a iteration of Conway's game of life. The output shows initial and the final matrix. Can be done in a loop to view further iterations.
+A C++ code depicting a iteration of Conway's game of life. The output shows the matrix after each iteration.
 
 The Game of Life is a cellular automaton devised by mathematician John Conway. It consists of a 2D grid of cells where each cell can either be alive or dead. The state of the board evolves generation by generation according to a fixed set of rules based on neighboring cells.
 
